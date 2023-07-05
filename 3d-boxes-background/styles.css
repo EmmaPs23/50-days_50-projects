@@ -1,0 +1,43 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  margin: 0;
+  height: 100vh;
+}
+
+#container {
+  display: flex;
+  width: 90vw;
+}
+
+.cards {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 90vh;
+  border-radius: 30px;
+  margin: 8px;
+  width: 10vh;
+  color: white;
+  transition: flex 0.9s ease-in;
+}
+
+.cards h3 {
+  font-size: 25px;
+  position: relative;
+  bottom: 25px;
+  left: 25px;
+  opacity: 0;
+}
+
+.cards.active-card h3 {
+  position: 1;
+  opacity: 1;
+  transition: ease-in 0.4s;
+}
+
+.active-card {
+  flex: 5;
+}
